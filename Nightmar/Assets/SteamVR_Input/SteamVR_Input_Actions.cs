@@ -39,6 +39,14 @@ namespace Valve.VR
         
         private static SteamVR_Action_Boolean p_default_SnapTurnRight;
         
+        private static SteamVR_Action_Boolean p_default_MovePlayerEast;
+        
+        private static SteamVR_Action_Boolean p_default_MovePlayerSouth;
+        
+        private static SteamVR_Action_Boolean p_default_MovePlayerNorth;
+        
+        private static SteamVR_Action_Boolean p_default_MovePlayerWest;
+        
         private static SteamVR_Action_Vibration p_default_Haptic;
         
         private static SteamVR_Action_Vector2 p_platformer_Move;
@@ -143,6 +151,38 @@ namespace Valve.VR
             }
         }
         
+        public static SteamVR_Action_Boolean default_MovePlayerEast
+        {
+            get
+            {
+                return SteamVR_Actions.p_default_MovePlayerEast.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Boolean default_MovePlayerSouth
+        {
+            get
+            {
+                return SteamVR_Actions.p_default_MovePlayerSouth.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Boolean default_MovePlayerNorth
+        {
+            get
+            {
+                return SteamVR_Actions.p_default_MovePlayerNorth.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Boolean default_MovePlayerWest
+        {
+            get
+            {
+                return SteamVR_Actions.p_default_MovePlayerWest.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
         public static SteamVR_Action_Vibration default_Haptic
         {
             get
@@ -221,6 +261,10 @@ namespace Valve.VR
                     SteamVR_Actions.default_HeadsetOnHead,
                     SteamVR_Actions.default_SnapTurnLeft,
                     SteamVR_Actions.default_SnapTurnRight,
+                    SteamVR_Actions.default_MovePlayerEast,
+                    SteamVR_Actions.default_MovePlayerSouth,
+                    SteamVR_Actions.default_MovePlayerNorth,
+                    SteamVR_Actions.default_MovePlayerWest,
                     SteamVR_Actions.default_Haptic,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
@@ -241,6 +285,10 @@ namespace Valve.VR
                     SteamVR_Actions.default_HeadsetOnHead,
                     SteamVR_Actions.default_SnapTurnLeft,
                     SteamVR_Actions.default_SnapTurnRight,
+                    SteamVR_Actions.default_MovePlayerEast,
+                    SteamVR_Actions.default_MovePlayerSouth,
+                    SteamVR_Actions.default_MovePlayerNorth,
+                    SteamVR_Actions.default_MovePlayerWest,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Steering,
@@ -263,6 +311,10 @@ namespace Valve.VR
                     SteamVR_Actions.default_HeadsetOnHead,
                     SteamVR_Actions.default_SnapTurnLeft,
                     SteamVR_Actions.default_SnapTurnRight,
+                    SteamVR_Actions.default_MovePlayerEast,
+                    SteamVR_Actions.default_MovePlayerSouth,
+                    SteamVR_Actions.default_MovePlayerNorth,
+                    SteamVR_Actions.default_MovePlayerWest,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Brake,
                     SteamVR_Actions.buggy_Reset};
@@ -285,6 +337,10 @@ namespace Valve.VR
                     SteamVR_Actions.default_HeadsetOnHead,
                     SteamVR_Actions.default_SnapTurnLeft,
                     SteamVR_Actions.default_SnapTurnRight,
+                    SteamVR_Actions.default_MovePlayerEast,
+                    SteamVR_Actions.default_MovePlayerSouth,
+                    SteamVR_Actions.default_MovePlayerNorth,
+                    SteamVR_Actions.default_MovePlayerWest,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Steering,
@@ -306,6 +362,10 @@ namespace Valve.VR
             SteamVR_Actions.p_default_HeadsetOnHead = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/HeadsetOnHead")));
             SteamVR_Actions.p_default_SnapTurnLeft = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/SnapTurnLeft")));
             SteamVR_Actions.p_default_SnapTurnRight = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/SnapTurnRight")));
+            SteamVR_Actions.p_default_MovePlayerEast = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/MovePlayerEast")));
+            SteamVR_Actions.p_default_MovePlayerSouth = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/MovePlayerSouth")));
+            SteamVR_Actions.p_default_MovePlayerNorth = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/MovePlayerNorth")));
+            SteamVR_Actions.p_default_MovePlayerWest = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/MovePlayerWest")));
             SteamVR_Actions.p_default_Haptic = ((SteamVR_Action_Vibration)(SteamVR_Action.Create<SteamVR_Action_Vibration>("/actions/default/out/Haptic")));
             SteamVR_Actions.p_platformer_Move = ((SteamVR_Action_Vector2)(SteamVR_Action.Create<SteamVR_Action_Vector2>("/actions/platformer/in/Move")));
             SteamVR_Actions.p_platformer_Jump = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/platformer/in/Jump")));

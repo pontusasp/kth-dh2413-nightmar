@@ -50,6 +50,22 @@
       "type": "boolean"
     },
     {
+      "name": "/actions/default/in/MovePlayerEast",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/MovePlayerSouth",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/MovePlayerNorth",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/MovePlayerWest",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
