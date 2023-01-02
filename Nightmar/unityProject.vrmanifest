@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.nightmar.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "D:\\UnityProject\\kth-dh2413-nightmar\\Nightmar\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\AGI_G2\\wkspaces\\nightmar\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "Nightmar [Testing]"
